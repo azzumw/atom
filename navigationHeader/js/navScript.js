@@ -62,8 +62,8 @@ function scrollFunction() {
     a[3].style.marginBottom='25px';
     a[4].style.marginBottom='25px';
 
-    p[0].style.fontSize = "28px";
-    p[0].style.marginTop = "30px";
-    p[0].style.marginBottom = "30px";
+    p[0].style.fontSize = "25px";
+    p[0].style.marginTop = "25px";
+    // p[0].style.marginBottom = "25px";
   }
 }
