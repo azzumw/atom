@@ -1,0 +1,74 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  background: grey;
+}
+
+.mainNavContainer{
+  width: 90%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10;
+  margin: 0 auto;
+  transition: all 0.4s linear;
+  background-color: #333;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+
+#logo{
+  float: left;
+  height: 90px;
+  width: 81px;
+}
+
+#navbar {
+  width: 100%;
+  padding: 10px;
+  min-width: 1420px;
+}
+
+#navbar a:hover {
+  /* background: #ddd; */
+  color: orange;
+}
+
+#navbar a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 30px 10px;
+  text-transform: uppercase;
+}
+
+#navbar p{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 28px;
+  margin:30px 10px;
+  letter-spacing: 1em;
+  overflow: auto;
+}
+
+
+.main {
+  /* padding: 16px; */
+  height: 1500px; /* Used in this example to enable scrolling */
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid;
+}
