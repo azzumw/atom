@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+}
+
+.main {
+  /* padding: 16px; */
+  height: 1500px; /* Used in this example to enable scrolling */
+  width: 85%;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+  border: 1px solid;
+}
+
+#searchBarContainer{
+  width: 90%;
+  margin: 10px auto;
+  background-color: grey;
+}
+
+ #myInput {
+  display: block;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin: 12px auto;
+  font-style: italic;
+}
+
+#myTable{
+  border-collapse: collapse;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 10px;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+.nowrap{
+  white-space: nowrap;
+}
