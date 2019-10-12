@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="tabs.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="mainNavContainer">
+      <nav id="navbar">
+        <!-- <img id = "logo" src="img/headerLogo.png"> -->
+        <a href="#home">Board</a>
+        <a href="#team">Meet The Team</a>
+        <a href="#news">News</a>
+        <a href="#Responsibilities">Responsibilities</a>
+        <a href="#releaseDates">Release Dates</a>
+        <p>UAT DASHBOARD</p>
+      </nav>
+    </div>
+
+    <div class="main">
+
+
+      <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">2019</button>
+      <button class="tablink" onclick="openCity('Paris', this, 'green')">2018</button>
+      <button class="tablink" onclick="openCity('Petra', this, 'brown')">2017</button>
+      <button class="tablink" onclick="openCity('Lahore', this, 'brown')">Old</button>
+
+      <div id="London" class="tabcontent">
+        <h1>2019</h1>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <h1>2018</h1>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+      <div id="Petra" class="tabcontent">
+        <h1>2017</h1>
+        <p>Petra was the capital of Nabataens.</p>
+      </div>
+
+      <div id="Lahore" class="tabcontent">
+        <h1>Old</h1>
+        <p>Lahore is the capital of Pakistan.</p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </body>
+
+  <script>
+    function openCity(cityName, elmnt, color) {
+
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Remove the background color of all tablinks/buttons
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < tablinks.length; i++) {
+   tablinks[i].style.backgroundColor = "";
+ }
+
+ // Show the specific tab content
+ document.getElementById(cityName).style.display = "block";
+
+ // Add the specific color to the button used to open the tab content
+ elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+  </script>
+</html>
