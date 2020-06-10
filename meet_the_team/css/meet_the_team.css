@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.row{
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.col_container{
+  width: 95%;
+  margin: 10px auto;
+  border: 1px solid green;
+  padding-left: 24px;
+}
+
+.column{
+  position: relative;
+  background-color: transparent;
+  width: 200px;;
+  min-width: 160px;
+  height: auto;
+  border: 1px solid orange;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 2px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.content{
+  border-radius: 5px;
+  width: 100%;
+  height: 80%;
+}
+
+.content img{
+  display: block;
+  border-radius: 5px;
+  width:100%;
+  height:240px;
+}
+
+.overlay{
+  background-color: gray;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  color: white;
+  font-family: 'Lato',sans-serif;
+}
+
+.column:hover .overlay {
+  opacity: 0.9;
+}
+
+.textarea{
+  text-align: center;
+  margin:30px 5px;
+  height: 70%;
+  /* border: 1px solid white; */
+}
+
+.textarea h3{
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.textarea h4{
+   margin-bottom: 20px;
+}
+
+.textarea .mobile{
+   margin-bottom: 20px;
+}
+
+.textarea .email{
+  font-size: 0.8em;
+  word-wrap: break-word;
+}
+
+
+@media screen and (max-width:1910px) {
+  .column{
+
+    width: 21%;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .column{
+
+    width: 25%;
+    /* margin-right: 16px; */
+    /* margin-left: 16px; */
+  }
+}
+
+@media screen and (max-width:1150px) {
+  .column{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width:620px) {
+
+  .column{
+    /*  1 col*/
+    width: 70%;
+    /* max-width: 280px; */
+    /* min-width: 200px; */
+    /* margin: 8px auto; */
+    /* margin-bottom: 16px; */
+    /* float: none; */
+    /* margin: 2px auto; */
+
+  }
+}

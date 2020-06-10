@@ -1,10 +1,21 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Table</title>
     <link rel="stylesheet" href="css/table.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      $("#arch").click(function(){
+
+        $("#hide").toggle();
+      });
+
+    });
+</script>
   </head>
   <body>
     <table>
@@ -16,19 +27,32 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>SR18</td>
-          <td>02 Sept 19</td>
-          <td>09 Sept 19</td>
-        </tr>
+        <tbody class ="labels">
+          <tr>
+            <td colspan="3" id="arch">
+              <label for="archive">Archive</label>
+  					  <!-- <input type="checkbox" name="archive" id="archive" data-toggle="toggle"> -->
+            </td>
+          </tr>
+        </tbody>
+        <tbody id="hide">
+          <tr>
+            <td>SR18</td>
+            <td>02 Sept 19</td>
+            <td>09 Sept 19</td>
+          </tr>
 
-        <tr>
-          <td>SR17</td>
-            <td>27 Jan 19</td>
-          <td>03 Feb 19</td>
-        </tr>
+          <tr>
+            <td>SR17</td>
+              <td>27 Jan 19</td>
+            <td>03 Feb 19</td>
+          </tr>
+        </tbody>
+
       </tbody>
 
     </table>
+
+
   </body>
 </html>

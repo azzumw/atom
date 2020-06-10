@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <style media="screen">
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .dropbtn {
+
+      font-size: 16px;
+      border: none;
+      width: 70px;
+      height: 70px;
+      opacity: 0.6;
+    }
+
+    .dropup {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      bottom:60px;
+      right: 200px;
+      display: inline-block;
+
+    }
+
+.dropup-content {
+display: none;
+position: absolute;
+/* background-color: rgb(60,60,60); */
+min-width: 200px;
+bottom: 70px;
+z-index: 1;
+border-radius: 5px;
+border: 1px solid orange;
+transition: 1s;
+}
+
+.dropup-content .container {
+color: black;
+padding-top: 0;
+background-color: rgb(60,60,60);
+display: block;
+color: white;
+border-bottom: 0.5px solid orange;
+font-family: 'Muli', sans-serif;
+
+}
+
+.dropup-content .container:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+display: block;
+
+}
+
+.dropup:hover .dropbtn {
+/* background-color: #2980B9; */
+opacity: 1;
+}
+
+.image{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.text{
+  font-size: 18px;
+  position: relative;
+  bottom: 12px;
+  left: 15px;
+  display: inline-block;
+
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="dropup">
+      <img src="randr.png" class="dropbtn">
+    <div class="dropup-content">
+      <div class="container">
+        <div class="image">
+          <img src="redbug.png" style="width:40px;height:40px;">
+        </div>
+        <div class="text">
+          Luke
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="qa2.png" style="width:40px;height:40px;opacity:1;">
+        </div>
+        <div class="text">
+          Phil
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="execution1.png" style="width:40px;height:40px;">
+        </div>
+        <div class="text">
+          Bianca
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="review6.png" style="width:40px;height:40px;">
+        </div>
+        <div class="text">
+          Keith
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

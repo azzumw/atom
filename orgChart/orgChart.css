@@ -1,0 +1,25 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.org-chart {
+	display:flex;
+	justify-content:center;
+	ul {
+		padding-top: 20px;
+		position: relative;
+		transition: all 0.5s;
+		ul::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0;
+			//height: 20px;
+		}
+	}
+}
+
+.redBox{
+	background-color: #cc0000;
+	height: 500px;
+}

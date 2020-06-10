@@ -29,3 +29,15 @@ th,td{
   vertical-align: middle;
   width: 100px;
 }
+
+.label tr td label {
+	/* display: block; */
+}
+
+#hide{
+  display:  none;
+}
+
+[data-toggle="toggle"] {
+	display: none;
+}
