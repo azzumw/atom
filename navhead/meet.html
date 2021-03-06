@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="navhead.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <header>
+
+      <div class="desktop-nav-header">
+
+        <div id="logo-section">
+          <img src="headerLogo.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="file:///Users/macintosh/Documents/atom/navhead/navhead.html">Home</a></li>
+                <li><a href="file:///Users/macintosh/Documents/atom/navhead/meet.html">Meet The Team</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Responsibilities</a></li>
+                <li><a href="hi.com">Release Dates</a></li>
+                <li><a href="#">Glossary</a></li>
+            </ul>
+        </nav>
+      </div>
+
+
+
+      <div class="page-title-header">
+        <h3><span>Home</span></h3>
+      </div>
+
+    </header>
+
+    <div class="main">
+
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    var currentUrl = window.location.href.split('#')[0];
+    var anchorSrc = document.getElementsByTagName('a');
+
+    // console.log(add);
+
+    for(var i =0; i <anchorSrc.length; i++){
+      var href = anchorSrc[i].href;
+      if(currentUrl === href){
+          // document.getElementsByTagName('a')[i].style.backgroundColor='whitesmoke';
+          document.getElementsByTagName('a')[i].style.color='#00a0a4';
+          // document.getElementsByTagName('a')[i].style.borderRadius='10px';
+          // document.getElementsByTagName('a')[i].style.padding='5px';
+      }else{
+
+      }
+
+    }
+
+  </script>
+</html>

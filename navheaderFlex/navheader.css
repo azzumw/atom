@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 100px;
+  width: 100%;
+  background-color: #00a0a4;
+  font-family: 'Muli', sans-serif;
+  /* background-color: #28465F; */
+  box-shadow: 0px 2px 28px gray;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+}
+
+
+.desktop-nav-header{
+  height: inherit;
+  /* border: 1px solid white; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav{
+    font-size: 20px;
+    /* border: 1px solid orange; */
+    /* height: 30px; */
+    width: 100%;
+    color: white;
+}
+
+nav li{
+  height: 40px;
+  width: 170px;
+  /* border-radius: 30px; */
+  /* border: 1px solid red; */
+  text-align: center;
+  padding-top: 7px;
+}
+
+nav a{
+  display: block;
+  width: inherit;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  /* padding: 5px 0; */
+  letter-spacing: 0.02em;
+}
+
+
+.main{
+
+  width: 75%;
+  max-width: 1300px;
+  height: 1300px;
+  margin: 200px auto;
+  border: 1px black solid;
+}
+
+
+
+@media only screen and (max-width: 1000px)  {
+
+  header{
+    height: auto;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+  }
+
+  nav li{
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a{
+    display: block;
+    height: inherit;
+    width: inherit;
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid orange; */
+  }
+
+  nav li:hover{
+
+    background-color: whitesmoke;
+  }
+
+  a:hover{
+    color: #00a0a4;
+    ont-weight: bolder;
+    padding: 0 0 0 0;
+  }
+
+
+  .main{
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (min-width:1001px) {
+  a:hover{
+   background-color: white;
+   width: 100%;
+   opacity: 70%;
+   /* color: #28465F; */
+   color: #00a0a4;
+   font-weight: bolder;
+   padding: 5px 0;
+   transition: all 0.5s linear;
+  }
+
+
+}
